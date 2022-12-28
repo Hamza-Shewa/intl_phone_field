@@ -450,7 +450,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
                 if (widget.enabled &&
                     widget.showDropdownIcon &&
