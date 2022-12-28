@@ -450,7 +450,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 if (widget.enabled &&
                     widget.showDropdownIcon &&
@@ -463,10 +463,13 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
                     'assets/flags/${_selectedCountry.code.toLowerCase()}.png',
                     package: 'intl_phone_field',
                     width: 32,
+                    fit: BoxFit.fitWidth,
+                    height: 32,
                   ),
                   SizedBox(width: 8),
                 ],
-                FittedBox(
+                SizedBox(
+                  height: 32,
                   child: Text(
                     '+${_selectedCountry.dialCode}',
                     style: widget.dropdownTextStyle,
